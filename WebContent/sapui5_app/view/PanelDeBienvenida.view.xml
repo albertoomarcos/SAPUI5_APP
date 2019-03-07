@@ -26,6 +26,11 @@
 				text="{i18n>showHelloButtonText}"
 				press=".onShowHelloTraducido" 
 				class="myCustomButton" />
+			<Button 
+				id="helloDialogButton"
+				text="Fragmesnt"
+				press=".onOpenDialog" 
+				class="myCustomButton" />
 			<FormattedText 
 				htmlText="Hello {/recipient/name}"
 				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />

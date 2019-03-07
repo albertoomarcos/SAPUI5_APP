@@ -35,6 +35,26 @@ sap.ui.define([
 	         var sMsg = oBundle.getText("helloMsg", [sRecipient]);
 	         // show message
 	         MessageToast.show(sMsg);
+		},
+		_getDialog : function() {
+			if (!this._oDialog) {
+				this._oDialog = sap.ui.xmlfragment("sapui5_app.view.HelloDialog", this);
+				this.getView().addDependent(this._oDialog);
+			}
+			return this._oDialog;
+		},
+		onOpenDialog : function() {
+			this._getDialog().open();
+		},
+	    onCloseDialog : function () {
+	         this._getDialog().close();
+	    },
+		onShowError : function() {
+//			alert("Error code x0002", {				
+//				title : "Alerta"
+//			});
+			alert("Has salido (OPCIONAL)");
+			this._getDialog().close();
 		}
    });
 });
