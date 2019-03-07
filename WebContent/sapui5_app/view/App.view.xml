@@ -3,24 +3,39 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc" 
 	displayBlock="true">
-	<App>
-		<pages>
-			<Page title="{i18n>homePageTitle}">
-				<content>
-					<Panel headerText="{i18n>helloPanelTitle}">
-						<content>
-							<Text text="Hola mundo "></Text>
-							<Input value="{/recipient/name}"
-								description="Hello {/recipient/name}" valueLiveUpdate="true"
-								width="50%" />
-							<Button text="This is an alert" press=".onShowHello" />
-							<Button text="This is a toast" press=".onShowHelloToast" />
-							<Button text="{i18n>showHelloButtonText}"
-								press=".onShowHelloTraducido" />
-						</content>
-					</Panel>
-				</content>
-			</Page>
-		</pages>
-	</App>
+	<Shell>
+		<App>
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<Panel headerText="{i18n>helloPanelTitle}"
+							class="sapUiResponsiveMargin"
+							width="auto">
+							<content>
+								<Text 
+									text="Hola mundo"
+									class="sapUiSmallMarginEnd">									
+								</Text>
+								<Input value="{/recipient/name}"
+									description="Hello {/recipient/name}" valueLiveUpdate="true"
+									width="50%" />
+								<Button 
+									text="This is an alert" 
+									press=".onShowHello" 
+									class="sapUiSmallMarginEnd"/>
+								<Button 
+									text="This is a toast" 
+									press=".onShowHelloToast" 
+									class="sapUiSmallMarginEnd"/>
+								<Button 
+									text="{i18n>showHelloButtonText}"
+									press=".onShowHelloTraducido" 
+									class="sapUiSmallMarginEnd"/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
 </mvc:View>
