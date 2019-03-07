@@ -5,6 +5,11 @@
 	<Page title="Title">
 		<content>
 			<Text text="Hola mundo "></Text>
+			<Input 
+				value="{/recipient/name}"
+				description="Hello {/recipient/name}" 
+				valueLiveUpdate="true"
+				width="60%" />
 			<Button text="This is an alert" press=".onShowHello" />
 			<Button text="This is a toast" press=".onShowHelloToast" />
 		</content>
