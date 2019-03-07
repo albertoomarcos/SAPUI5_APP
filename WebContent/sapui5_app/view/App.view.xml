@@ -2,7 +2,7 @@
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	controllerName="sapui5_app.controller.App"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
+	<Page title="{i18n>appTitle}">
 		<content>
 			<Text text="Hola mundo "></Text>
 			<Input 
