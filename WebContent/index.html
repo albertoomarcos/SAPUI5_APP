@@ -4,18 +4,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
 
-	<script
-		id="sap-ui-bootstrap"
-		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_bluecrystal"
-		data-sap-ui-libs="sap.m"
-		data-sap-ui-compatVersion="edge"
-		data-sap-ui-async="true"
-		data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
-		data-sap-ui-resourceroots='{
-			"sap.ui.demo.walkthrough": "./"
-		}'>
-	</script>
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-libs="sap.ui.commons,sap.ui.table"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-compatVersion="edge">
+		</script>
 	
 		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
 
@@ -30,5 +26,6 @@
 	</head>
 	<body class="sapUiBody" role="application">
 		<div id="content"></div>
+	
 	</body>
 </html>

@@ -1,8 +1,11 @@
-<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-		controllerName="sapui5_app.controller.App" xmlns:html="http://www.w3.org/1999/xhtml">
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="sapui5_app.controller.App"
+	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Title">
 		<content>
 			<Text text="Hola mundo "></Text>
+			<Button text="Say Hello" press=".onShowHello" />
 		</content>
 	</Page>
 </core:View>
