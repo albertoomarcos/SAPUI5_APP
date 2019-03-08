@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="sapui5_app.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			<Page title="Tableview">
+				<content>
+					<Table class="sapUiSizeCompact" id="table1"
+						includeItemInSelection="true" items="{path: 'DataModel>/Objects'}"
+						mode="MultiSelect" selectionChange="onselectionChange">
+						<columns>
+							<Column>
+								<Label text="Product Name" />
+							</Column>
+							<Column>
+								<Label text="Supplier" />
+							</Column>
+							<Column>
+								<Label text="Price" />
+							</Column>
+							<Column>
+								<Label text="Units Ordered" />
+							</Column>
+						</columns>
+						<ColumnListItem press="onPress" type="Navigation">
+							<Text text="{DataModel>Name}"></Text>
+							<Text text="{DataModel>Supplier}"></Text>
+							<Text text="{DataModel>Price}"></Text>
+							<Text text="{DataModel>Units}"></Text>
+						</ColumnListItem>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

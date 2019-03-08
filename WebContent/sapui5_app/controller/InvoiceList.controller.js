@@ -4,13 +4,12 @@ sap.ui.define([
 ], function (Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.walkthrough.controller.InvoiceList", {
+	return Controller.extend("sapui5_app.controller.InvoiceList", {
 
 		onInit : function () {
-			var oViewModel = new JSONModel({
-				currency: "EUR"
-			});
-			this.getView().setModel(oViewModel, "view");
+			 var oModel = new sap.ui.model.json.JSONModel();
+	          oModel.loadData("./json/Invoices.json");
+	          sap.ui.getCore().setModel(oModel);
 		}
 
 	});

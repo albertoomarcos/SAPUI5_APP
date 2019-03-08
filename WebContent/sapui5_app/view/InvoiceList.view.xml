@@ -37,10 +37,10 @@
       headerText="{i18n>invoiceListTitle}"
       class="sapUiResponsiveMargin"
       width="auto"
-      items="{invoice3>/Invoices}" >
+      items="{invoice4>/Invoices}" >
       <items>
          <ObjectListItem
-            title="{invoice3>Quantity} x {invoice3>ProductName}"/>
+            title="{invoice4>Quantity} x {invoice4>ProductName}"/>
       </items>
    </List>
 	

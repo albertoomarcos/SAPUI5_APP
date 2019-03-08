@@ -8,8 +8,8 @@
 			<pages>
 				<Page title="{i18n>homePageTitle}">
 					<content>
-						<mvc:XMLView viewName="sapui5_app.view.PanelDeBienvenida"/>
-						<mvc:XMLView viewName="sapui5_app.view.InvoiceList"/>															
+						<mvc:XMLView viewName="sapui5_app.view.PanelDeBienvenida"/> 
+						<mvc:XMLView viewName="sapui5_app.view.InvoiceList"/>													
 					</content>
 				</Page>
 			</pages>

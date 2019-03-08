@@ -7,7 +7,11 @@ sap.ui.define([
 	function(Controller, MessageToast,JSONModel, ResourceModel) {
 	"use strict";
 	return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
+		
 //		onInit : function() {
+//			var dataModel = this.getOwnerComponent().getModel("tableData");
+//			alert(dataModel);
+//		}
 //			// set data model on view
 //			var oData = {
 //				recipient : {

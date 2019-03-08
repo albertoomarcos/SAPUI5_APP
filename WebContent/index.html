@@ -22,7 +22,13 @@
 				app.addPage(page);
 				app.placeAt("content");
 		</script>
-		
+		<script>
+				sap.ui.localResources("sapui5_app");
+				var app = new sap.m.App({initialPage:"idApp22"});
+				var page = sap.ui.view({id:"idApp22", viewName:"sapui5_app.view.View1", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
 
 	</head>
 	<body class="sapUiBody" role="application">
