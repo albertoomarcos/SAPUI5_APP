@@ -1,23 +1,13 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "sap.ui.demo.walkthrough",
+		"id": "sapui5_app.myapp",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
-		},
-		"dataSources": {
-			"tableData_alias": {
-				"uri": "sapui5_app/json/Object.json",
-				"type": "JSON"
-			},
-			"init_data_alias": {
-				"uri": "sapui5_app/json/Object.json",
-				"type": "JSON"
-			}
 		}
 	},
 	"sap.ui": {
@@ -30,18 +20,10 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.ui.demo.walkthrough.view.App",
+			"viewName": "sapui5_app.myapp.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
-		},
-		"dependencies": {
-			"minUI5Version": "1.60",
-			"libs": {
-				"sap.m": {
-					
-				}
-			}
 		},
 		"routing": {
 			"config": {
@@ -75,6 +57,14 @@
 				}
 			}
 		},
+		"dependencies": {
+			"minUI5Version": "1.60",
+			"libs": {
+				"sap.m": {
+					
+				}
+			}
+		},
 		"contentDensities": {
 			"compact": true,
 			"cozy": true
@@ -82,25 +72,17 @@
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
-				"settings": {
-					"bundleName": "sap.ui.demo.walkthrough.i18n.i18n"
+				"settings": { 
+					"bundleName": "sapui5_app.myapp.i18n.i18n"
 				}
 			},
 			"tableData": {
 				"type": "sap.ui.model.json.JSONModel",
 				"dataSource": "tableData_alias"
 			},
-			"invoice": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "sapui5_app/json/Invoices.json"
-			},
-			"invoice2": {
+			"prueba": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "json/Invoices.json"
-			},
-			"invoice3": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "Invoices.json"
 			},
 			"init_data": {
 				"type": "sap.ui.model.json.JSONModel",

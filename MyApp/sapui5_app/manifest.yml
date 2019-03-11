@@ -1,0 +1,9 @@
+---
+applications:
+- name: SAPUI5_APP
+  memory: 256M
+  instances: 1
+  host: SAPUI5-APP
+  domain: cfapps.eu10.hana.ondemand.com
+  services:
+  - myuaa
